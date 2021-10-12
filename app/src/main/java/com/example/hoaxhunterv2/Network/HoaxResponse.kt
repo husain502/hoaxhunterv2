@@ -1,5 +1,6 @@
 package com.example.hoaxhunterv2.Network
 
+
 data class HoaxResponse(
     val id: Int,
     val classification: String,
