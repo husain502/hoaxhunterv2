@@ -1,4 +1,6 @@
-package com.example.hoaxhunterv2.Network
+package com.example.hoaxhunterv2.model
+
+import com.google.gson.annotations.SerializedName
 
 
 data class HoaxResponse(
