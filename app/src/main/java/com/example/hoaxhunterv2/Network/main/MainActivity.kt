@@ -1,12 +1,8 @@
-package com.example.hoaxhunterv2
+package com.example.hoaxhunterv2.Network.main
 
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import com.example.hoaxhunterv2.R
 import com.example.hoaxhunterv2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

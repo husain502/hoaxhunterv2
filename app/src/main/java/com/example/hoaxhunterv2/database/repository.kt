@@ -1,7 +1,6 @@
 package com.example.hoaxhunterv2.database
 
 import androidx.lifecycle.LiveData
-import com.example.hoaxhunterv2.model.HoaxResponse
 
 class repository(private val daoHoax: DaoHoax) {
 

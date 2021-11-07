@@ -1,13 +1,17 @@
 package com.example.hoaxhunterv2.Network
 
-import com.example.hoaxhunterv2.model.HoaxResponse
+import com.example.hoaxhunterv2.BuildConfig
+import com.example.hoaxhunterv2.Network.main.Hoax
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Headers
-import java.util.*
+import retrofit2.http.Query
 
 interface Api {
+
+    //semua hoax
     @GET("antihoax")
-    @Headers("Authorization:43d93c474a0e06142a9a4c52484e6910")
-    suspend fun getHoax(): Call<ArrayList<HoaxResponse>>
+    fun gethoax(
+        @Query("api_key") apiKey: String = BuildConfig.API_KEY
+    ): Call<Hoax>
+
 }
