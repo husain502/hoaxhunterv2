@@ -1,7 +1,7 @@
 package com.example.hoaxhunterv2.Network
 
 import com.example.hoaxhunterv2.BuildConfig
-import com.example.hoaxhunterv2.Network.main.Hoax
+import com.example.hoaxhunterv2.data.Hoax
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
