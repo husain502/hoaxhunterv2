@@ -1,6 +1,5 @@
-z<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
-    android:id="@+id/cardviewnews"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,7 +17,7 @@ z<?xml version="1.0" encoding="utf-8"?>
         android:padding="8dp">
 
         <ImageView
-            android:id="@+id/Picture1"
+            android:id="@+id/picture1"
             android:layout_width="107dp"
             android:layout_height="107dp"
             tools:ignore="MissingConstraints"
@@ -28,7 +27,7 @@ z<?xml version="1.0" encoding="utf-8"?>
         </ImageView>
 
         <TextView
-            android:id="@+id/tanggal"
+            android:id="@+id/date"
             android:layout_width="121dp"
             android:layout_height="19dp"
             android:textStyle="bold"
@@ -40,7 +39,7 @@ z<?xml version="1.0" encoding="utf-8"?>
         </TextView>
 
         <TextView
-            android:id="@+id/Judul"
+            android:id="@+id/title"
             android:maxLines="1"
             android:layout_width="236dp"
             android:layout_height="19dp"
@@ -48,7 +47,7 @@ z<?xml version="1.0" encoding="utf-8"?>
             android:layout_marginTop="8dp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/Picture1"
-            app:layout_constraintTop_toBottomOf="@+id/tanggal">
+            app:layout_constraintTop_toBottomOf="@+id/date">
 
         </TextView>
 
@@ -64,13 +63,13 @@ z<?xml version="1.0" encoding="utf-8"?>
         </TextView>
 
         <TextView
-            android:id="@+id/Typehoaks"
+            android:id="@+id/typehoaks"
             android:layout_width="260dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toEndOf="@+id/Picture1"
-            app:layout_constraintTop_toBottomOf="@+id/Judul"
+            app:layout_constraintStart_toEndOf="@+id/picture1"
+            app:layout_constraintTop_toBottomOf="@+id/title"
             tools:ignore="MissingConstraints" />
 
 
