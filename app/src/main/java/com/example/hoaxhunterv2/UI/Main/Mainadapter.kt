@@ -30,7 +30,6 @@ class Mainadapter: RecyclerView.Adapter<Mainadapter.MyViewHolder>(){
             binding.apply {
                 picture1.loadImage(hoax.picture1)
                 title.text = hoax.title
-                fact.text = hoax.fact
                 typehoaks.text = hoax.classification
             }
         }
@@ -56,14 +55,12 @@ class Mainadapter: RecyclerView.Adapter<Mainadapter.MyViewHolder>(){
                 putExtra(Detailhoax.EXTRA_ID,pos.id)
                 putExtra(Detailhoax.EXTRA_PICTURE,pos.picture1)
                 putExtra(Detailhoax.EXTRA_CLASSIFICATION,pos.classification)
-                putExtra(Detailhoax.EXTRA_FACT,pos.fact)
             }
             it.context.startActivity(intent)
         }
     }
 
     override fun getItemCount(): Int = listhoax.size
-    }
-
-
 }
+
+
