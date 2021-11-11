@@ -8,71 +8,60 @@
     android:layout_marginRight="8dp"
     android:layout_marginLeft="8dp"
     android:layout_marginTop="4dp"
-    android:layout_marginBottom="4dp"
-    android:layout_gravity="center">
+    android:layout_marginBottom="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:padding="8dp">
 
+
         <ImageView
             android:id="@+id/picture1"
             android:layout_width="107dp"
             android:layout_height="107dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="30dp"
-            >
-        </ImageView>
-
-        <TextView
-            android:id="@+id/date"
-            android:layout_width="121dp"
-            android:layout_height="19dp"
-            android:textStyle="bold"
-            android:maxLines="1"
-            app:layout_constraintStart_toEndOf="@+id/Picture1"
-            android:layout_marginStart="8dp"
+            android:src="@drawable/contoh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="28dp">
-        </TextView>
+            app:layout_constraintVertical_bias="0.578"
+            tools:ignore="MissingConstraints"></ImageView>
 
         <TextView
             android:id="@+id/title"
-            android:maxLines="1"
+            android:text="@string/Title"
             android:layout_width="236dp"
             android:layout_height="19dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/Picture1"
-            app:layout_constraintTop_toBottomOf="@+id/date">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/fact"
-            android:layout_width="220dp"
-            android:layout_height="16dp"
             android:maxLines="1"
+            android:textStyle="bold"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="145dp"
-            tools:layout_editor_absoluteY="113dp">
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="5dp">
 
         </TextView>
 
         <TextView
             android:id="@+id/typehoaks"
             android:layout_width="260dp"
+            android:text="@string/Classification"
             android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintStart_toEndOf="@+id/picture1"
             app:layout_constraintTop_toBottomOf="@+id/title"
             tools:ignore="MissingConstraints" />
-
-
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="260dp"
+            android:text="@string/Date"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/picture1"
+            app:layout_constraintTop_toBottomOf="@+id/typehoaks"
+            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

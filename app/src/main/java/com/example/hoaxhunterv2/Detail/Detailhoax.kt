@@ -1,4 +1,4 @@
-package com.example.hoaxhunterv2.UI.Detail
+package com.example.hoaxhunterv2.Detail
 
 class Detailhoax {
     companion object{
