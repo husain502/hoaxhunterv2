@@ -15,6 +15,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String","API_KEY","43d93c474a0e06142a9a4c52484e6910")
     }
 
     buildTypes {
@@ -57,6 +59,7 @@ dependencies {
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "androidx.activity:activity-ktx:1.1.0"
 
     //recycle view
     implementation "androidx.recyclerview:recyclerview:1.2.1"

@@ -7,5 +7,6 @@ data class detailhoax (
         val picture1: String,
         val content: String,
         val fact: String,
-        val reference: String
+        val reference: String,
+        val date: Int
         )

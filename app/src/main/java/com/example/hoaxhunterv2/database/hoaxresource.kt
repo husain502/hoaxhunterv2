@@ -7,5 +7,5 @@ import com.example.hoaxhunterv2.database.remote.modelhoax
 interface hoaxresource{
     fun takehoaxlist(): LiveData<ArrayList<modelhoax>>
 
-    fun takehoaxdetail(): LiveData<ArrayList<detailhoax>>
+    fun takehoaxdetail(id:Int): LiveData<detailhoax>
 }
