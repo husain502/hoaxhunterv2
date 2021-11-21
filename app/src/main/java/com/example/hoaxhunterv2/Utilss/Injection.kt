@@ -1,11 +1,13 @@
 package com.example.hoaxhunterv2.Utilss
 
+import com.example.hoaxhunterv2.database.remotedatasource
+
 object Injection {
 
 
-    fun provideRepository(): allrepository{
-        val dataSource = remoteDataSource.getInstance()
+    fun provideRepository(): repository{
+        val dataSource = remotedatasource.getInstance()
 
-        return  allrepository.getInstance(dataSource)
+        return  repository.getInstance(dataSource)
     }
 }
