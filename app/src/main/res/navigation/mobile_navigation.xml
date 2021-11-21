@@ -6,20 +6,15 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.hoaxhunterv2.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/HoaxNav"
+        android:name="com.example.hoaxhunterv2.UI.Hoaxlist.Hoax"
+        android:label="HOAX LIST"
+        tools:layout="@layout/fragment_hoax" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.hoaxhunterv2.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/ProfileNav"
+        android:name="com.example.hoaxhunterv2.UI.Profile.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.hoaxhunterv2.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>

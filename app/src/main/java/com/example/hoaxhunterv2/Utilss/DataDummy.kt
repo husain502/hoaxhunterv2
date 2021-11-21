@@ -11,7 +11,7 @@ import java.io.InputStream
 object DataDummy {
     private var data = Gson()
 
-    fun getdummyhoac() = data.fromJson(loadJSON("hoaxlist.json"),HoaxResponses::class.java).results
+    fun getdummyhoax() = data.fromJson(loadJSON("hoaxlist.json"),HoaxResponses::class.java).results
     fun getdummydetailhoax()=data.fromJson(loadJSON("hoaxdetail.json"),detailhoax::class.java)
 
 
