@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiConfig {
 
-    private val retrofit:Retrofit = Retrofit.Builder()
+    private val retrofit = Retrofit.Builder()
                 .baseUrl("https://yudistira.turnbackhoax.id/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()

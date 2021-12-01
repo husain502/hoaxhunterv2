@@ -53,6 +53,13 @@ class repository private constructor(private val RemoteDataSource: remotedatasou
         },id)
         return HoaxDetail
     }
+    companion object{
+        private var instance: repository? = null
+        fun getInstance(RemoteDataSource: remotedatasource): repository =
+                instance ?: synchronized (this){
+                    instance ?: repository(RemoteDataSource).apply { instance =this}
+                }
+    }
 
 
 }
