@@ -9,15 +9,15 @@ import retrofit2.http.*
 
 interface Api {
 
-    @POST("antihoax")
+    @GET("antihoax")
     fun getallhoax(
-            @Query("key") Key: String="43d93c474a0e06142a9a4c52484e6910")
+            @Query("")Key: String=BuildConfig.API_KEY)
     : Call<HoaxResponses>
 
-    @POST("antihoax")
+    @GET("antihoax")
     fun getdetailhoax(
         @Path("id") id:Int,
-        @Query("key") Key: String="43d93c474a0e06142a9a4c52484e6910")
+        @Query("key") Key: String=BuildConfig.API_KEY)
     :Call<detailhoax>
 
     //43d93c474a0e06142a9a4c52484e6910

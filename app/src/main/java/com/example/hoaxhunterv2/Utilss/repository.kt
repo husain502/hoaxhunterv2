@@ -23,7 +23,6 @@ class repository private constructor(private val RemoteDataSource: remotedatasou
                         classification = HoaxResponse.classification)
                         hoaxlist.add(hoax)
                     }
-
                     listhoax.postValue(hoaxlist)
                 }
             }
