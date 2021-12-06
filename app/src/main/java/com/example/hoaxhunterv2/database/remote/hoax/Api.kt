@@ -13,7 +13,7 @@ interface Api {
     @POST("antihoax")
     fun getallhoax(
             @Field("")Key: String=BuildConfig.API_KEY)
-    : Response<List<modelhoax>>
+    :Call<List<modelhoax>>
 
     @GET("antihoax")
     fun getdetailhoax(

@@ -32,17 +32,12 @@ class remotedatasource {
         com.example.hoaxhunterv2.Utilss.IdlingResource.increment()
         ApiConfig.apiInstance
                 .getallhoax()
-                .enqueue (object : retrofit2.Callback<HoaxResponses>{
-                    override fun onFailure(call: Call<HoaxResponses>, t: Throwable) {
+                .enqueue (object : retrofit2.Callback<List<modelhoax>>{
+                    override fun onFailure(call: Call<List<modelhoax>>, t: Throwable) {
                         Log.d(FAIL, t.message.toString())
                         com.example.hoaxhunterv2.Utilss.IdlingResource.decrement()}
-                    override fun onResponse(
-                        call: Call<HoaxResponses>,
-                        response: Response<HoaxResponses>
-                    ) {
-                        response.body()?.results?.let { callback.onLoadHoax(it) }
-                        Log.d(SUCCES,response.code().toString())
-                        com.example.hoaxhunterv2.Utilss.IdlingResource.decrement()
+                    override fun onResponse(call: Call<List<modelhoax>>, response: Response<List<modelhoax>>) {
+
                     }
                 })
     }
