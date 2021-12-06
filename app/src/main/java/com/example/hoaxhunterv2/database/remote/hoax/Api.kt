@@ -1,18 +1,19 @@
-package com.example.hoaxhunterv2.Network
+package com.example.hoaxhunterv2.database.remote.hoax
 
 import com.example.hoaxhunterv2.BuildConfig
 import com.example.hoaxhunterv2.database.remote.hoax.HoaxResponses
 import com.example.hoaxhunterv2.database.remote.hoax.detailhoax
+import com.example.hoaxhunterv2.database.remote.modelhoax
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.*
 
 interface Api {
-
-    @GET("antihoax")
+    @FormUrlEncoded
+    @POST("antihoax")
     fun getallhoax(
-            @Query("")Key: String=BuildConfig.API_KEY)
-    : Call<HoaxResponses>
+            @Field("")Key: String=BuildConfig.API_KEY)
+    : Response<List<modelhoax>>
 
     @GET("antihoax")
     fun getdetailhoax(

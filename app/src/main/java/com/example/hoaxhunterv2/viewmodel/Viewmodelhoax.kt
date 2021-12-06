@@ -1,4 +1,4 @@
-package com.example.hoaxhunterv2.UI.Hoaxlist
+package com.example.hoaxhunterv2.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

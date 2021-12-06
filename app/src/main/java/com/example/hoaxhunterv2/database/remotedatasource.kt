@@ -1,17 +1,14 @@
 package com.example.hoaxhunterv2.database
 
 import android.util.Log
-import androidx.test.espresso.IdlingResource
-import com.example.hoaxhunterv2.Network.ApiConfig
-import com.example.hoaxhunterv2.Network.ApiConfig.apiInstance
-import com.example.hoaxhunterv2.Utilss.IdlingResource.decrement
+import com.example.hoaxhunterv2.database.remote.hoax.ApiConfig
+import com.example.hoaxhunterv2.database.remote.hoax.ApiConfig.apiInstance
 import com.example.hoaxhunterv2.Utilss.IdlingResource.increment
 import com.example.hoaxhunterv2.database.remote.hoax.HoaxResponses
 import com.example.hoaxhunterv2.database.remote.hoax.detailhoax
 import com.example.hoaxhunterv2.database.remote.modelhoax
 import retrofit2.Call
 import retrofit2.Response
-import retrofit2.Retrofit
 
 class remotedatasource {
 

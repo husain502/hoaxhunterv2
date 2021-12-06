@@ -1,4 +1,4 @@
-package com.example.hoaxhunterv2.UI.Hoaxlist
+package com.example.hoaxhunterv2.UI
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,15 +12,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hoaxhunterv2.Detail.Hoaxdetail.Companion.EXTRA_ID
 import com.example.hoaxhunterv2.Utilss.Viewmodelfactory
 import com.example.hoaxhunterv2.Utilss.onItemclickhoax
+import com.example.hoaxhunterv2.adapter.hoaxadapter
 import com.example.hoaxhunterv2.database.remote.hoax.detailhoax
 import com.example.hoaxhunterv2.database.remote.modelhoax
 import com.example.hoaxhunterv2.databinding.FragmentHoaxBinding
+import com.example.hoaxhunterv2.viewmodel.viewmodelhoax
 
 
 class Hoax : Fragment() {
 
     private lateinit var fragmentHoaxBinding: FragmentHoaxBinding
-    private lateinit var viewmodel:viewmodelhoax
+    private lateinit var viewmodel: viewmodelhoax
 
 
     override fun onCreateView(inflater: LayoutInflater,container: ViewGroup?,savedInstanceState: Bundle?):View? {

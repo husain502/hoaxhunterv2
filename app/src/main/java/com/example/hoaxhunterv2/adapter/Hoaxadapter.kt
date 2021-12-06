@@ -1,4 +1,4 @@
-package com.example.hoaxhunterv2.UI.Hoaxlist
+package com.example.hoaxhunterv2.adapter
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -38,7 +38,7 @@ class hoaxadapter : RecyclerView.Adapter<hoaxadapter.ViewHolder>(){
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): hoaxadapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val newsbinding = NewsBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ViewHolder(newsbinding)
     }

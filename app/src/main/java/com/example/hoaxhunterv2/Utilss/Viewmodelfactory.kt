@@ -3,7 +3,7 @@ package com.example.hoaxhunterv2.Utilss
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.hoaxhunterv2.Detail.viewmodelhoaxdetail
-import com.example.hoaxhunterv2.UI.Hoaxlist.viewmodelhoax
+import com.example.hoaxhunterv2.viewmodel.viewmodelhoax
 import java.lang.IllegalArgumentException
 
 

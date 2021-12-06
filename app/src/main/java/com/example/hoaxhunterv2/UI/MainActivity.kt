@@ -1,4 +1,4 @@
-package com.example.hoaxhunterv2.UI.Main
+package com.example.hoaxhunterv2.UI
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

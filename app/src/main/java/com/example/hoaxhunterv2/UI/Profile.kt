@@ -1,4 +1,4 @@
-package com.example.hoaxhunterv2.UI.Profile
+package com.example.hoaxhunterv2.UI
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
